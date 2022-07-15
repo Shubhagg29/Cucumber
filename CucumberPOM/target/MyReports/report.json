@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-09T10:37:13.527Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3953000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Forgot Password link",
+        "description": "",
+        "id": "login-page-feature;forgot-password-link",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 102000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15114000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on login page",
+            "match": {
+              "location": "parallel.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "forgot your password link should be displayed",
+            "match": {
+              "location": "parallel.LoginSteps.forgot_your_password_link_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login page feature",
+    "description": "",
+    "id": "login-page-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/parallel/LoginPage.feature",
+    "tags": []
+  }
+]
